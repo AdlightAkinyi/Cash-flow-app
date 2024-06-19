@@ -11,7 +11,7 @@ app.use(express.static('public'));
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'password',
+    password: 'pass1234',
     database: 'cash_flow_app'
 });
 
@@ -82,7 +82,7 @@ app.delete('/delete-expense', (req, res) => {
     });
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3306;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
