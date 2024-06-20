@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (data.success) {
             userId = data.userId;
             loginPage.classList.add('hidden');
-            expensePage.classList.remove('hidden');
+            expensePage.classList.remove('hidden'); // Show the expenses page
             loadExpenses();
         } else {
             alert('Invalid login');
