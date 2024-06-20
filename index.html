@@ -6,7 +6,9 @@
     <title>Cash Flow App</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+ 
 <body>
+    
     <style>
         body {
     font-family: Arial, sans-serif;
@@ -19,7 +21,7 @@
     height: 100vh;
 }
 
-.container {
+.container1{
     background: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -73,13 +75,19 @@ ul li button:hover {
 }
 
     </style>
-    <div class="container">
-        <div id="landing-page">
+    
+
+
+
+    
+    <!-- <div class="container1">
+        <div id="landing-page"> -->
             <h1>Welcome to Cash Flow App</h1>
             <button id="login-button">Login</button>
             <button id="signup-button">Sign Up</button>
         </div>
-        
+        </div>
+        <div class="container2">
         <div id="login-page" class="hidden">
             <h2>Login</h2>
             <form id="login-form">
@@ -99,7 +107,8 @@ ul li button:hover {
             </form>
             <p>Already have an account? <a href="#" id="go-to-login">Login</a></p>
         </div>
-        
+        </div>
+        <div class="container3">
         <div id="expense-page" class="hidden">
             <h2>Expense Tracker</h2>
             <form id="expense-form">
@@ -110,8 +119,9 @@ ul li button:hover {
             <h3>Total: $<span id="total-amount">0</span></h3>
             <ul id="expense-list"></ul>
             <button id="logout">Logout</button>
+            </div>
         </div>
-    </div>
+    
     
     <script src="app.js"></script>
 </body>
