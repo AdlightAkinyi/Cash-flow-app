@@ -190,16 +190,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     
 });
-// document.getElementById('proceedToLoginBtn').addEventListener('click', () => {
-//         console.log('Redirecting to login...');
-//     });
-
-//     const scrollButton = document.querySelector('.btn.btn-primary');
-//     scrollButton.addEventListener('click', () => {
-//         document.getElementById('login-page').scrollIntoView({
-//             behavior: 'smooth'
-//         });
-//     });
-// });
 
 
