@@ -1,4 +1,5 @@
-# Cash-flow-app
+# Title
+Cash-flow-app
 
 # Description
 This is a Web application that allows to users track their expenses and manage their finances effectively. Users can Signup and Login with a username and password ,add expenses ,get to know the total amount of expenses and get congratulatory message after adding expense ,delete expenses and also logout.
