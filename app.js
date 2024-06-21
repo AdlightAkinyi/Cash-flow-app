@@ -1,8 +1,10 @@
+
 document.addEventListener('DOMContentLoaded', () => {
     const landingPage = document.getElementById('landing-page');
     const loginPage = document.getElementById('login-page');
     const signupPage = document.getElementById('signup-page');
     const expensePage = document.getElementById('expense-page');
+    const successMessage = document.getElementById('successMessage'); // New line added
 
     const loginButton = document.getElementById('login-button');
     const signupButton = document.getElementById('signup-button');
@@ -95,6 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const data = await response.json();
         if (data.success) {
             addExpense(description, amount);
+            showSuccessMessage(); // Show success message after adding expense
         } else {
             alert('Failed to add expense');
         }
@@ -162,4 +165,41 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Failed to load expenses');
         }
     }
+
+    function showSuccessMessage() {
+        successMessage.classList.remove('hidden');
+    }
+
+    // Event listener for "Proceed to Login" button in success message
+    document.getElementById('proceedToLoginBtn').addEventListener('click', () => {
+        // Redirect or handle login process here
+        console.log('Redirecting to login...');
+    });
+
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    
+
+    const scrollButton = document.querySelector('.btn.btn-primary');
+    scrollButton.addEventListener('click', () => {
+        document.getElementById('login-page').scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+
+    
+});
+// document.getElementById('proceedToLoginBtn').addEventListener('click', () => {
+//         console.log('Redirecting to login...');
+//     });
+
+//     const scrollButton = document.querySelector('.btn.btn-primary');
+//     scrollButton.addEventListener('click', () => {
+//         document.getElementById('login-page').scrollIntoView({
+//             behavior: 'smooth'
+//         });
+//     });
+// });
+
+
