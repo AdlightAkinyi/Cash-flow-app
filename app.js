@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
     const landingPage = document.getElementById('landing-page');
     const loginPage = document.getElementById('login-page');
@@ -190,5 +189,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
     
 });
-
-

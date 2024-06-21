@@ -37,6 +37,13 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'style.css'));
+});
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'app.js'));
+});
+
 // Signup endpoint
 app.post('/signup', (req, res) => {
     const { username, password } = req.body;
