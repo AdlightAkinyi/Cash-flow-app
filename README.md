@@ -12,7 +12,7 @@ Node.js for server-side development and MySQL database.
 # Live sites
 node server.js
 
-http://localhost:3000/
+
 
 
 
