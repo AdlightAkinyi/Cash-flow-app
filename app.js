@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const goToSignup = document.getElementById('go-to-signup');
     const goToLogin = document.getElementById('go-to-login');
+    
 
     let expenses = [];
     let userId = null;
